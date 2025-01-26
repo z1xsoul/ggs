@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffe4e1; /* Light pink background */
+    color: #333;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #ff8a8a;
+    color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    margin: 0;
+}
+
+/* Game Container */
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: white;
+    overflow: hidden;
+    border: 3px solid #ff8a8a;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hearts */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    animation: fall 4s linear infinite;
+}
+
+/* Animation */
+@keyframes fall {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 600px;
+    }
+}
+
+/* Scoreboard */
+#score-board {
+    margin-top: 10px;
+}
+
+#start-game {
+    background: #ff8a8a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#start-game:hover {
+    background: #e87474;
+}
